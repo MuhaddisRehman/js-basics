@@ -1,0 +1,33 @@
+// _paddings.scss
+$padding-base: 10px; // Adjust the base padding value as needed
+
+@for $i from 0 through 10 {
+  $multiplier: $i * 0.25;
+  $padding-value: $padding-base * (1 + $multiplier);
+
+  .p-#{$i} {
+    padding: $padding-value;
+  }
+
+  .py-#{$i} {
+    padding-block: $padding-value;
+  }
+
+  .px-#{$i} {
+    padding-inline: $padding-value;
+  }
+  .ps-#{$i} {
+    padding-left: $padding-value;
+  }
+  .pe-#{$i} {
+    padding-right: $padding-value;
+  }
+  .pt-#{$i} {
+    padding-top: $padding-value;
+  }
+  .pb-#{$i} {
+    padding-bottom: $padding-value;
+  }
+}
+
+// Additional padding utility classes can be added as needed

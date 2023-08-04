@@ -1,0 +1,16 @@
+.round {
+  border-radius: 10vw;
+}
+.round-circle {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+.round-top {
+  border-radius: 1rem 1rem 0 0;
+}
+.round-bottom {
+  border-radius: 0 0 1rem 1rem;
+}
+.rounded-corners {
+  border-radius: 1rem;
+}

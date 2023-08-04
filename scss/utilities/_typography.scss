@@ -1,0 +1,23 @@
+@use "../abstracts/typography" as fonts;
+// Utility Classes for Font Families
+@each $font-family, $value in fonts.$font-families {
+  .font-family-#{$font-family} {
+    font-family: $value;
+  }
+}
+
+// Utility Classes for Font Sizes
+@each $size-category, $sizes in fonts.$font-sizes {
+  @each $weight, $size in $sizes {
+    .font-size-#{$size-category}-#{$weight} {
+      font-size: $size;
+      line-height: fonts.$line-height-base;
+    }
+  }
+}
+
+// Utility Class for Base Font Size
+.font-size-base {
+  font-size: fonts.$font-size-base;
+  line-height: fonts.$line-height-base;
+}

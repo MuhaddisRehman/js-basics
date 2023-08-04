@@ -1,0 +1,15 @@
+@use "../abstracts/colors" as colors;
+// Loop through the map and generate utility classes
+@each $color-name, $color-value in colors.$colors {
+  .bg-#{$color-name} {
+    background-color: $color-value;
+  }
+
+  .text-#{$color-name} {
+    color: $color-value;
+  }
+
+  .border-#{$color-name} {
+    border-color: $color-value;
+  }
+}

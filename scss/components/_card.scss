@@ -1,0 +1,29 @@
+.card-container {
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  @media screen and (min-width: 376px) {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    * {
+      flex-basis: 1;
+    }
+  }
+}
+.card {
+  @media screen and (min-width: 860px) {
+    max-width: 340px;
+  }
+
+  button {
+    transition: all 0.3s ease !important;
+
+    border: 1px solid #ffffff;
+    &:hover {
+      background-color: transparent;
+      color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+$margin-base: 8px; // Adjust the base margin value as needed
+
+@for $i from 0 through 10 {
+  $multiplier: $i * 0.25;
+  $margin-value: $margin-base * (1 + $multiplier);
+
+  .m-#{$i} {
+    margin: $margin-value;
+  }
+
+  .my-#{$i} {
+    margin-block: $margin-value;
+  }
+
+  .mx-#{$i} {
+    margin-inline: $margin-value;
+  }
+  .ms-#{$i} {
+    margin-left: $margin-value;
+  }
+  .me-#{$i} {
+    margin-right: $margin-value;
+  }
+  .mt-#{$i} {
+    margin-top: $margin-value;
+  }
+  .mb-#{$i} {
+    margin-bottom: $margin-value;
+  }
+}
