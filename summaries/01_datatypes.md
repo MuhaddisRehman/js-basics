@@ -15,3 +15,8 @@
 - Array
 - Objects
 - Functions
+
+## Memory
+
+- Stack (Primitive)
+- Heap (Non-Primitive)
